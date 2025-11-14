@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home – My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      /* Static background image that fills the screen */
+      background-image: url("your-background-image.jpg"); /* <-- replace this */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    nav a.active {
+      background-color: #00c3ff;
+      color: #000000;
+    }
+
+    /* Page content wrapper */
+    main {
+      flex: 1;
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Image field – centered horizontally at top of content */
+    .hero-image-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero-image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    /* Text fields – left aligned and stacked */
+    .text-field {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid #00c3ff;
+      text-align: left;
+    }
+
+    .text-field h2 {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+      color: #00c3ff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="project1.html">Project 1</a>
+    <a href="project2.html">Project 2</a>
+    <a href="project3.html">Project 3</a>
+  </nav>
+
+  <!-- Page content -->
+  <main>
+    <!-- Centered image field -->
+    <div class="hero-image-container">
+      <!-- Replace src with your image path -->
+      <img src="your-main-image.jpg" alt="Main feature or portrait" />
+    </div>
+
+    <!-- Four left-aligned text fields -->
+    <div class="text-field">
+      <h2>Section 1</h2>
+      <p>Write your first introduction or overview text here.</p>
+    </div>
+
+    <div class="text-field">
+      <h2>Section 2</h2>
+      <p>Write more about your goals, interests, or background here.</p>
+    </div>
+
+    <div class="text-field">
+      <h2>Section 3</h2>
+      <p>Describe your skills, tools, or technologies you enjoy working with.</p>
+    </div>
+
+    <div class="text-field">
+      <h2>Section 4</h2>
+      <p>Give a short invitation to explore your projects or contact you.</p>
+    </div>
+  </main>
+
+  <!-- Footer for contact details -->
+  <footer>
+    <!-- Replace with your actual contact info -->
+    Contact: your.email@example.com · Your LinkedIn · Your GitHub
+  </footer>
+</body>
+</html>
