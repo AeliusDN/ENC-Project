@@ -76,6 +76,19 @@ ond<!DOCTYPE html>
       text-align: center;
     }
 
+    /* Image sections between text blocks */
+    .image-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
     /* Footer */
     footer {
       background-color: rgba(0, 0, 0, 0.85);
@@ -104,17 +117,41 @@ ond<!DOCTYPE html>
       <p>I'm a second year undergraduate student at the University of Central Florida majoring in Computer Science.</p>
     </div>
 
-    <div class="text-field">
-      <p>I can currently code a little bit of C, as my program requires, but primarily know Ruby. I also wrote the HTML that composes this website. I learned Ruby while creating video games in the RPG Maker VX Ace engine, which offers a Ruby-based scripting system.</p>
+    <!-- Image between 1 and 2 -->
+    <div class="image-section">
+      <img src="UCF_Knights_logo.svg.png" alt="UCF Logo">
     </div>
 
     <div class="text-field">
-      <p>I enjoy a wide array of personal activities such as archery, blacksmithing, and reading as well as the previously mentioned video game development.</p>
+      <p>I can currently code a little bit of C, as my program requires, but primarily know Ruby. I also wrote the HTML that composes this website. I learned Ruby while creating video games in the RPG Maker VX Ace engine, which offers a Ruby-based scripting system.
+      (Pictured: An older photo of me winning an award at an archery competition)</p>
+    </div>
+
+    <!-- Image between 1 and 2 -->
+    <div class="image-section">
+      <img src="archery.jpg" alt="An older photo of my winning an award at an archery competition.">
     </div>
 
     <div class="text-field">
-      <p>I also work on modifying pre-existing games, and have made mods for games like Helldivers 2 and Halo Reach. I've become fairly experienced at breaking down pre-existing systems and reworking them to create new encounters, primarily in video games.</p>
+      <p>I enjoy a wide array of personal activities such as archery, blacksmithing, and reading as well as the previously mentioned video game development.
+      (Pictured: An older photo of me forging a hatchet)</p>
     </div>
+
+    <!-- Image between 1 and 2 -->
+    <div class="image-section">
+      <img src="blacksmith.jpg" alt="An older photo of me forging a hatchet with one of my teachers.">
+    </div>
+
+    <div class="text-field">
+      <p>I also work on modifying pre-existing games, and have made mods for games like Helldivers 2 and Halo Reach. I've become fairly experienced at breaking down pre-existing systems and reworking them to create new encounters, primarily in video games.
+      (Pictured: An image of my modded character in Helldivers 2)</p>
+    </div>
+
+    <!-- Image between 1 and 2 -->
+    <div class="image-section">
+      <img src="Helldivers.png" alt="An image of my modded character in Helldivers 2.">
+    </div>
+    
   </main>
 
   <!-- Footer for contact details -->
@@ -124,5 +161,6 @@ ond<!DOCTYPE html>
   </footer>
 </body>
 </html>
+
 
 
