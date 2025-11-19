@@ -33,8 +33,18 @@
       padding: 15px 30px;
       display: flex;
       justify-content: flex-start;
+      align-items: center;
       gap: 20px;
     }
+
+    .nav-right-box {
+      margin-left: auto;          /* pushes this box to the far right */
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
 
     nav a {
       color: #ffffff;
@@ -59,19 +69,6 @@
       padding: 30px;
       max-width: 900px;
       margin: 0 auto;
-    }
-
-    /* Image field – centered horizontally at top of content */
-    .hero-image-container {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .hero-image-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      border: 2px solid rgba(255, 255, 255, 0.5);
     }
 
     /* Text fields – left aligned and stacked */
@@ -107,15 +104,13 @@
     <a href="project1.html">Job Materials</a>
     <a href="project2.html">UN SDG</a>
     <a href="project3.html">Instructions</a>
+    <div class="nav-right-box">
+      Owen Scruggs
+    </div>
   </nav>
 
   <!-- Page content -->
   <main>
-    <!-- Centered image field -->
-    <div class="hero-image-container">
-      <!-- Replace src with your image path -->
-      <img src="3241.avif" alt="Main feature or portrait" />
-    </div>
 
     <!-- Four left-aligned text fields -->
     <div class="text-field">
@@ -124,13 +119,7 @@
 
     <div class="text-field">
       <p>This website is a personal electronic portfolio of my work in ENC 3241 Writing for the Technical Professional.</p>
-    </div>
-
-    <div class="text-field">
       <p>Here you will find personal information about myself as well as three of the projects I worked on for this class: A Job Materials Project, an Instruction Project, and a Project about a UN SDG.</p>
-    </div>
-
-    <div class="text-field">
       <p>You may use the navigational tabs at the top of the page to view each project as well as my personal information or return to this home page. I also have contact information at the bottom.</p>
     </div>
   </main>
@@ -142,6 +131,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
