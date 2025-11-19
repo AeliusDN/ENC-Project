@@ -27,7 +27,6 @@
       background-attachment: fixed;
     }
 
-    /* Navigation bar */
     nav {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 15px 30px;
@@ -35,16 +34,18 @@
       justify-content: flex-start;
       align-items: center;
       gap: 20px;
+      position: relative; /* important for centering the box */
     }
 
-    .nav-right-box {
-      margin-left: auto;          /* pushes this box to the far right */
+    .nav-center-box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); /* centers horizontally */
       background-color: rgba(255, 255, 255, 0.1);
       padding: 5px 12px;
       border-radius: 4px;
       font-size: 0.9rem;
     }
-
 
     nav a {
       color: #ffffff;
@@ -77,6 +78,7 @@
       padding: 15px 20px;
       margin-bottom: 20px;
       text-align: left;
+      line-height: 1.6;
     }
 
     .text-field h2 {
@@ -104,7 +106,7 @@
     <a href="project1.html">Job Materials</a>
     <a href="project2.html">UN SDG</a>
     <a href="project3.html">Instructions</a>
-    <div class="nav-right-box">
+    <div class="nav-center-box">
       Owen Scruggs
     </div>
   </nav>
@@ -114,11 +116,7 @@
 
     <!-- Four left-aligned text fields -->
     <div class="text-field">
-      <h2>Owen Scruggs</h2>
-    </div>
-
-    <div class="text-field">
-      <p>This website is a personal electronic portfolio of my work in ENC 3241 Writing for the Technical Professional.</p>
+      <p>  This website is a personal electronic portfolio of my work in ENC 3241 Writing for the Technical Professional.</p>
       <p>Here you will find personal information about myself as well as three of the projects I worked on for this class: A Job Materials Project, an Instruction Project, and a Project about a UN SDG.</p>
       <p>You may use the navigational tabs at the top of the page to view each project as well as my personal information or return to this home page. I also have contact information at the bottom.</p>
     </div>
@@ -131,6 +129,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
