@@ -27,13 +27,24 @@
       background-attachment: fixed;
     }
 
-    /* Navigation bar */
     nav {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 15px 30px;
       display: flex;
       justify-content: flex-start;
+      align-items: center;
       gap: 20px;
+      position: relative; /* important for centering the box */
+    }
+
+    .nav-center-box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); /* centers horizontally */
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 0.9rem;
     }
 
     nav a {
@@ -99,6 +110,9 @@
     <a href="project1.html">Job Materials</a>
     <a href="project2.html">UN SDG</a>
     <a href="project3.html">Instructions</a>
+    <div class="nav-center-box">
+      Owen Scruggs
+    </div>
   </nav>
 
   <!-- Page content -->
@@ -160,6 +174,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
