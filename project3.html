@@ -34,13 +34,14 @@
       justify-content: flex-start;
       align-items: center;
       gap: 20px;
-      position: relative; /* important for centering the box */
+      position: relative;        /* make nav the positioning context */
     }
 
     .nav-center-box {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%); /* centers horizontally */
+      top: 50%;                  /* center vertically */
+      left: 50%;                 /* center horizontally */
+      transform: translate(-50%, -50%);
       background-color: rgba(255, 255, 255, 0.1);
       padding: 5px 12px;
       border-radius: 4px;
@@ -158,6 +159,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
